@@ -1,0 +1,67 @@
+---
+title: "Git & Github Intro"
+output: html_document
+---
+
+## Git and GitHub with R
+
+**What is Git?**
+Git is a version control system, used to track changes for files on your computer.  It is very popular of keeping track of development of code files over time, and allowing you to restore previous versions of the file if needed.
+  
+  
+**What is GitHub?**
+GitHub is a website that hosts your Git files. There are other options to host your Git files, but GitHub is most widely used.
+  
+  
+**Why should you use version control with Git and GitHub?**  
+
+- Inevitably you're going to encounter a situation where you have a script working and later come back to it make a few *small* changes and break it or run it and get unexplainable differences. You could just save each version separately on your computer but that can get messy.  
+  
+  
+- It's also possible you may want to share your code publicly, this may be part of your review process or may be something you make available for other researchers to use in their own work or to reproduce yours. GitHub is one of the main places people publicly share their code. It also allows you to keep your code in private repositories if you choose.  
+
+- Git/GitHub is also a really useful tool to collaborate with others.  
+
+##### Introduce yourself to Git
+
+```{r}
+install.packages('usethis')
+use_git_config(user.name= "YourGitHubUsername", user.email="YourEmail@email.com")
+```
+
+
+*Repository:* Is basically a folder that has a collection of your git-tracked files
+*Cloning:* You take a GitHub repository and make a copy of it on your local drive.  
+    - To Clone a Repository using Rstudio -> File -> New Project -> Version Control -> Git
+      
+    
+*Pull:* When you want to update your local copy of the repo with the one that is on GitHub (i.e. We have added the new files for next session and you want to bring them into your session), you would first open up the R project and on the top right console where environment tab is change the select tab to git.Then hit the down arrow this pulls info from GitHub down to you. It's good practice to always pull first when you go to work on a repo that is not yours alone.
+
+
+##### Create a file and send it to GitHub
+
+4.  Let's make a change to our R markdown and save it.  
+
+5. Go to the Git tab at the top right console. Hit the Diff button on the left side of the top right console. This opens a panel that will show you the difference between your local files and the repo.
+
+6. *Add / Stage* is the first step in version controlling your files.  In the diff panel we can 'stage' the files (i.e. get ready to commit the changes we made into our version control system then send to GitHub), just by checking the box next to the file. 
+
+7. After you have checked the boxes for each file and staged the files, you can now commit the changes to the local copy of the repo. You do this by adding a commit message in the top right box and hitting commit.  Commit messages are meant to be messages to yourself that help you keep track of why you made the changes. You want these to be as meaningful as possible. After you hit the commit button a window will pop up reminding you of what you changed and after you close that you should have a clear diff window open. 
+
+8. Your files are now being tracked on your repo. They are NOT on GitHub.  To send the files on GitHub, we *push* them. We do this by hitting the up arrow in the top right Rstudio panel (when the Git tab is selected). You'll need to enter in your GitHub credentials. 
+
+9. Check GitHub to confirm you can now see your files. 
+
+### Generate a manifest file for your R markdown report
+
+```{r}
+writeManifest()
+```
+
+
+10. Add the manifest file  and repeat the process of *Add/ Stage -> Commit ->Push*, then hit clock icon in the Git panel in Rstudio and checkout how your versions/changes are being tracked.
+
+##### Want to learn more? Check out these resources:
+
+1. [Happy Git with R](https://happygitwithr.com)
+2. [Software Carpentry Git Lesson](http://swcarpentry.github.io/git-novice/)
