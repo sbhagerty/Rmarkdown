@@ -6,7 +6,7 @@ params:
   year: '2020'
 ---
 
-# 2020 Encounter Report for Rhode Island Hospital
+# 2020 Encounter Report for `r params$hospital_name`
 
 Encounter **reasons** and visits by date from a simulated population of 10k Rhode Islanders.
 

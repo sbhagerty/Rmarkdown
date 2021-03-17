@@ -1,0 +1,13 @@
+name: second_report
+title: second_report
+username: hsqc
+account: hsqc
+server: ec2-18-219-53-188.us-east-2.compute.amazonaws.com
+hostUrl: http://ec2-18-219-53-188.us-east-2.compute.amazonaws.com/rsconnect/__api__
+appId: 3
+bundleId: 4
+url: http://ec2-18-219-53-188.us-east-2.compute.amazonaws.com/rsconnect/content/3/
+when: 1616017404.46858
+lastSyncTime: 1616017404.4686
+asMultiple: FALSE
+asStatic: FALSE

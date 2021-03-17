@@ -1,0 +1,13 @@
+name: simulated_hospital_report
+title: Simulated_Hospital_Report
+username: hsqc
+account: hsqc
+server: ec2-18-219-53-188.us-east-2.compute.amazonaws.com
+hostUrl: http://ec2-18-219-53-188.us-east-2.compute.amazonaws.com/rsconnect/__api__
+appId: 2
+bundleId: 3
+url: http://ec2-18-219-53-188.us-east-2.compute.amazonaws.com/rsconnect/shannons_report/
+when: 1616017306.81253
+lastSyncTime: 1616017306.81254
+asMultiple: FALSE
+asStatic: FALSE
